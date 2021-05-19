@@ -18,6 +18,24 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
+# Link dotfiles
+
 cd && ln -s -f ~/Work/configs/.tmux.conf
 cd ~/.vim_runtime && ln -s -f ~/Work/configs/.vim_runtime/my_configs.vim
 cd && ln -s ~/Work/configs/.zshrc
+
+# asdf
+
+asdf plugin add ruby
+asdf plugin add python
+asdf plugin add nodejs
+
+asdf install ruby 2.7.3
+asdf install python 3.9.5
+asdf install python 2.7.18
+asdf install nodejs 16.1.0
+
+asdf global ruby 2.7.3
+asdf global python 3.9.5 2.7.18
+asdf global nodejs 16.1.0
+
