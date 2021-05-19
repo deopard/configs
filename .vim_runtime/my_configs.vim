@@ -27,7 +27,6 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-packadd! dracula
 syntax enable
 colorscheme dracula
 
