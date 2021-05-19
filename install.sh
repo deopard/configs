@@ -22,7 +22,7 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 cd && git clone https://github.com/gpakosz/.tmux.git \
     && ln -s -f .tmux/.tmux.conf \
-    && ln -s -f ~/Work/config/.tmux.conf.local
+    && ln -s -f ~/Work/configs/.tmux.conf.local
 cd ~/.vim_runtime && ln -s -f ~/Work/configs/.vim_runtime/my_configs.vim
 cd && ln -s ~/Work/configs/.zshrc
 
