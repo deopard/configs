@@ -5,6 +5,9 @@
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
 
+# -- Tom's configuration -------------------------------------------------------
+set-option -sa terminal-overrides ',xterm-256color:RGB'
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
