@@ -41,3 +41,6 @@ asdf global ruby 2.7.3
 asdf global python 3.9.5 2.7.18
 asdf global nodejs 16.1.0
 
+python3 -m pip install --user --upgrade pynvim
+python2 -m pip install --user --upgrade pynvim
+npm install -g neovim
