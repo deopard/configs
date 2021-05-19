@@ -16,6 +16,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
+cd && ln -s -f ~/Work/configs/.tmux.conf
+cd ~/.vim_runtime && ln -s -f ~/Work/configs/.vim_runtime/my_configs.vim
+cd && ln -s ~/Work/configs/.zshrc
