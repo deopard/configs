@@ -1,6 +1,6 @@
-brew install --cask visual-studio-code iterm2 postman rubymine slack zoom docker
+brew install --cask visual-studio-code iterm2 postman rubymine intellij-idea slack zoom docker
 brew install --cask spectacle bitwarden naver-whale microsoft-edge karabiner-element dozer notion
-brew install asdf gpg gawk
+brew install asdf gpg gawk git-flow
 brew install bat exa neovim tmux zsh ack
 
 brew tap homebrew/cask-font
