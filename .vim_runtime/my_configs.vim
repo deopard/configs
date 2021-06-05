@@ -3,14 +3,17 @@ set guifont=JetBrains\ Mono\ Nerd\ Font:h13
 let g:snipMate = { 'snippet_version' : 1 }
 
 set nu
+set clipboard=unnamed
+set nofoldenable
 
 let NERDTreeShowHidden=1
+let g:NERDTreeWinPos = "right"
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html', 'terraform']
   \ }
 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -25,14 +28,21 @@ Plug 'mileszs/ack.vim'
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 
 syntax enable
 colorscheme dracula
 
 let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 autocmd FileType typescript setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
 
 
 """"""""""""
