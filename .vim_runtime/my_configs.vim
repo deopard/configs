@@ -5,6 +5,8 @@ let g:snipMate = { 'snippet_version' : 1 }
 set nu
 set clipboard=unnamed
 set nofoldenable
+set splitright
+set splitbelow
 
 let NERDTreeShowHidden=1
 let g:NERDTreeWinPos = "right"
