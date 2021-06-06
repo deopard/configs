@@ -30,6 +30,8 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'hashivim/vim-terraform'
 
+Plug 'udalov/kotlin-vim'
+
 call plug#end()
 
 syntax enable

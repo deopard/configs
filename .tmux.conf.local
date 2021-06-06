@@ -6,7 +6,7 @@
 
 
 # -- Tom's configuration -------------------------------------------------------
-set-option -sa terminal-overrides ',xterm-256color:RGB'
+set-option -sa terminal-overrides ',screen-256color:RGB'
 
 # -- navigation ----------------------------------------------------------------
 
