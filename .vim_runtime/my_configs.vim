@@ -49,6 +49,11 @@ autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
 
 
+"""""""""""""""""""""""
+" The Silver Searcher "
+"""""""""""""""""""""""
+let g:ackprg = 'ag --vimgrep'
+
 """"""""""""
 " coc.nvim "
 """"""""""""
