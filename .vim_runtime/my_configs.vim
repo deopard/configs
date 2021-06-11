@@ -13,11 +13,6 @@ let g:NERDTreeWinPos = "right"
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html', 'terraform']
-  \ }
-
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 Plug 'eslint/eslint'
@@ -38,9 +33,6 @@ call plug#end()
 
 syntax enable
 colorscheme dracula
-
-let g:prettier#autoformat = 1
-let g:prettier#autoformat_require_pragma = 0
 
 autocmd FileType typescript setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
