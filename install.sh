@@ -1,5 +1,7 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew install --cask visual-studio-code iterm2 postman rubymine intellij-idea slack zoom docker
-brew install --cask spectacle bitwarden naver-whale microsoft-edge karabiner-element dozer notion skitch
+brew install --cask rectangle bitwarden naver-whale karabiner-elements dozer notion skitch
 brew install asdf gpg gawk git-flow
 brew install bat exa neovim tmux zsh ack the_silver_searcher
 brew install hashicorp/tap/terraform-ls
