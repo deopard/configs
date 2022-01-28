@@ -6,7 +6,7 @@ brew install asdf gpg gawk git-flow
 brew install bat exa neovim tmux zsh ack the_silver_searcher
 brew install hashicorp/tap/terraform-ls
 
-brew tap homebrew/cask-font
+brew tap homebrew/cask-fonts
 brew install font-jetbrains-mono-nerd-font
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
