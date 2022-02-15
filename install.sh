@@ -6,7 +6,7 @@ brew install asdf gpg gawk git-flow
 brew install bat exa neovim tmux zsh ack the_silver_searcher
 brew install hashicorp/tap/terraform-ls
 
-brew tap homebrew/cask-fonts
+brew tap homebrew/cask-font
 brew install font-jetbrains-mono-nerd-font
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -19,7 +19,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim
+touch ~/.config/nvim/init.vim
+ln -sf ~/.vimrc ~/.config/nvim/init.vim
 
 # Link dotfiles
 
@@ -27,7 +29,7 @@ cd && git clone https://github.com/gpakosz/.tmux.git \
     && ln -s -f .tmux/.tmux.conf \
     && ln -s -f ~/Work/configs/.tmux.conf.local
 cd ~/.vim_runtime && ln -s -f ~/Work/configs/.vim_runtime/my_configs.vim
-cd && ln -s ~/Work/configs/.zshrc
+cd && ln -sf ~/Work/configs/.zshrc
 
 # asdf
 
