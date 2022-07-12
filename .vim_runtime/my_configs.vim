@@ -4,7 +4,6 @@ let g:snipMate = { 'snippet_version' : 1 }
 
 set nu
 set clipboard=unnamed
-set nofoldenable
 set splitright
 set splitbelow
 
@@ -29,9 +28,16 @@ Plug 'hashivim/vim-terraform'
 
 Plug 'udalov/kotlin-vim'
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 syntax enable
+
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
+
 colorscheme dracula
 
 autocmd FileType typescript setlocal shiftwidth=2 softtabstop=2 expandtab
@@ -39,7 +45,8 @@ autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
-
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType erb setlocal shiftwidth=2 softtabstop=2 expandtab
 
 """""""""""""""""""""""
 " The Silver Searcher "
@@ -215,3 +222,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+set nofoldenable
+
+lua require('init')

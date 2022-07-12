@@ -29,6 +29,10 @@ cd && git clone https://github.com/gpakosz/.tmux.git \
     && ln -s -f .tmux/.tmux.conf \
     && ln -s -f ~/Work/configs/.tmux.conf.local
 cd ~/.vim_runtime && ln -s -f ~/Work/configs/.vim_runtime/my_configs.vim
+
+mkdir -p ~/.vim_runtime/lua
+cd ~/.vim_runtime/lua && ln -s -f ~/Work/configs/.vim_runtime/lua/init.lua
+
 cd && ln -sf ~/Work/configs/.zshrc
 
 # asdf
